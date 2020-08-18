@@ -1,5 +1,5 @@
 # Run this image
-To run this image you can use `docker run -pd 42420:42420 --name VintageStoryServer devidian/vintagestory`, but you may want to use a customized version for your needs so see `./build-custom-example/README.md`
+To run this image you can use `docker run -pd 42420:42420 --name VintageStoryServer devidian/vintagestory`, but you may want to use a customized version for your needs so see following instructions.
 
 # Custom build
 You can either copy files from `https://github.com/Devidian/docker-vintagestory/tree/master/build-custom-example` or follow these steps:

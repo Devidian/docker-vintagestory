@@ -4,7 +4,7 @@ FROM alpine as downloader
 WORKDIR /download
 
 ENV VSTYPE stable
-ENV VSVERSION 1.12.14
+ENV VSVERSION 1.13.0
 
 RUN wget "https://cdn.vintagestory.at/gamefiles/${VSTYPE}/vs_server_${VSVERSION}.tar.gz"
 RUN tar xzf "vs_server_${VSVERSION}.tar.gz"
