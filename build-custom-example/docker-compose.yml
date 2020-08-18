@@ -8,6 +8,8 @@ services:
     volumes: 
       - gamedata:/gamedata
     ports:
-      - "42420:42420"
+      - 42420:42420
+    environment:
+      VSDATAPATH: vs-custom
 volumes:
   gamedata:
