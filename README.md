@@ -17,13 +17,18 @@ You can either copy files from `https://github.com/Devidian/docker-vintagestory/
 # ============== runtime stage ==================
 FROM devidian/vintagestory:latest as runtime
 
-WORKDIR /game
+ARG vs_data_path=/gamedata/vs
 
 # update with your own serverconfig
-COPY "./serverconfig.json" "/gamedata/${VSDATAPATH}/serverconfig.json"
+COPY serverconfig.json ${vs_data_path}/serverconfig.json
+# copy mods
+#COPY Mods ${vs_data_path}/Mods/
+# copy default player data
+#COPY Playerdata ${vs_data_path}/Playerdata/
 
-# CMD [ "mono" , "VintagestoryServer.exe", "--dataPath", "/gamedata/${VSDATAPATH}" ]
-CMD mono VintagestoryServer.exe --dataPath "/gamedata/${VSDATAPATH}"
+WORKDIR /game
+
+CMD mono VintagestoryServer.exe --dataPath ${vs_data_path}
 
 ```
 
@@ -34,15 +39,17 @@ version: '3.1'
 
 services: 
   vsserver:
-    build: .
+    build:
+      context: .
+      args: 
+        vs_data_path: /gamedata/vs-mods/
     container_name: vsserver
     restart: always
     volumes: 
       - gamedata:/gamedata
     ports:
       - 42420:42420
-    environment:
-      VSDATAPATH: vs-custom
+      
 volumes:
   gamedata:
 ```
