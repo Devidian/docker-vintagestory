@@ -11,6 +11,8 @@ You can either copy files from `https://github.com/Devidian/docker-vintagestory/
 - run `docker-compose up -d --build` to rebuild and restart
 - run `docker-compose down` to stop
 
+We use `vs_data_path` as ARG because ENV did not get overridden in build phase and we use `VS_DATA_PATH` as ENV because ARG in CMD is empty.
+
 ## Dockerfile for custom-build
 
 ```docker
@@ -28,7 +30,7 @@ COPY serverconfig.json ${vs_data_path}/serverconfig.json
 
 WORKDIR /game
 
-CMD mono VintagestoryServer.exe --dataPath ${vs_data_path}
+CMD mono VintagestoryServer.exe --dataPath ${VS_DATA_PATH}
 
 ```
 
@@ -42,14 +44,15 @@ services:
     build:
       context: .
       args: 
-        vs_data_path: /gamedata/vs-mods/
+        vs_data_path: /gamedata/vs-custom/
     container_name: vsserver
     restart: always
     volumes: 
       - gamedata:/gamedata
     ports:
       - 42420:42420
-      
+    environment:
+      VS_DATA_PATH: /gamedata/vs-custom
 volumes:
   gamedata:
 ```
