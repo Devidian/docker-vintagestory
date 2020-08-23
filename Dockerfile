@@ -13,16 +13,16 @@ RUN rm "vs_server_${vs_version}.tar.gz"
 # ============== runtime stage ==================
 FROM mono:latest as runtime
 
-WORKDIR /game
+COPY --from=downloader "./download/" "/game"
 
+# Defaults
 ARG vs_data_path=/gamedata/vs
 
-COPY --from=downloader "./download/" "/game"
 COPY "./serverconfig.json" "${vs_data_path}/serverconfig.json"
-
 
 #  Expose ports
 EXPOSE 42420/tcp
 
+WORKDIR /game
 # Execution command
-CMD mono VintagestoryServer.exe --dataPath ${vs_data_path}
+CMD mono VintagestoryServer.exe --dataPath ${VS_DATA_PATH}

@@ -1,7 +1,7 @@
 # ============== runtime stage ==================
 FROM devidian/vintagestory:latest as runtime
 
-ARG vs_data_path=/gamedata/vs
+ARG vs_data_path=/gamedata/vs-custom
 
 # update with your own serverconfig
 COPY serverconfig.json ${vs_data_path}/serverconfig.json
@@ -12,4 +12,4 @@ COPY Playerdata ${vs_data_path}/Playerdata/
 
 WORKDIR /game
 
-CMD mono VintagestoryServer.exe --dataPath ${vs_data_path}
+CMD mono VintagestoryServer.exe --dataPath ${VS_DATA_PATH}
