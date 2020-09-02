@@ -57,5 +57,14 @@ volumes:
   gamedata:
 ```
 
-# using unstable versions
-to use unstable versions just replace tag `latest` with `unstable` in `Dockerfile`
+# Using unstable versions
+To use unstable versions just replace tag `latest` with `unstable` in `Dockerfile`
+
+# Updating container
+To update to the latest version call `docker pull devidian/vintagestory` first, this will download the newest latest base image. Then execute `docker-compose up -d --build` if you have not changed any other files it should not override them (did not for me)
+
+# Copy/Override files
+To copy and override files use `docker exec vsserver cp [local path] [docker-path]` where `docker-path` is starting with `/gamedata/vs-custom/..` for the example composer file. This is useful to update white/blacklists manually or update `serversettings.json`
+
+# Troubleshooting / Help / Issues
+If you encounter any Problems or want some help feeel free to contact me on Discord (`Devidian#1334`) on my Discord Server (https://discord.gg/8h3yhUT) or write an issue at GitHub (https://github.com/Devidian/docker-vintagestory)
