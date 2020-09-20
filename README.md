@@ -37,7 +37,7 @@ CMD mono VintagestoryServer.exe --dataPath ${VS_DATA_PATH}
 ## docker-compose.yml
 
 ```yml
-version: '3.1'
+version: '3.8'
 
 services: 
   vsserver:
