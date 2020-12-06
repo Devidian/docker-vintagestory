@@ -1,17 +1,20 @@
 version: '3.8'
 
 services: 
-  vsserver:
+  vs-custom-server-01:
+    container_name: vs-custom-server-01
     build:
       context: .
       args: 
         vs_data_path: /gamedata/vs-custom/
-    container_name: vsserver
-    restart: always
+    restart: unless-stopped
     volumes: 
       - gamedata:/gamedata
     ports:
-      - 42420:42420
+      - target: 42420
+        published: 42420
+        protocol: tcp
+        # mode: host
     environment:
       VS_DATA_PATH: /gamedata/vs-custom
 volumes:
