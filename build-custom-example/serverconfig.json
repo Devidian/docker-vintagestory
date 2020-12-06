@@ -1,15 +1,13 @@
 {
-  "ConfigVersion": "1.3",
+  "ConfigVersion": "1.0",
   "ServerMonitor": true,
   "MasterserverUrl": "http://masterserver.vintagestory.at/api/v1/servers/",
-  "ClientConnectionTimeout": 600,
-  "ClientPlayingTimeout": 60,
-  "BuildLogging": false,
+  "ClientConnectionTimeout": 120,
   "EntityDebugMode": false,
   "MapSizeX": 1000000,
   "MapSizeY": 256,
   "MapSizeZ": 1000000,
-  "ServerLanguage": "de",
+  "ServerLanguage": "en",
   "SkipEveryChunkRow": 0,
   "SkipEveryChunkRowWidth": 0,
   "ModPaths": [
@@ -19,7 +17,7 @@
   "WorldConfig": {
     "Seed": null,
     "SaveFileLocation": "/gamedata/vs-custom/Saves/default.vcdbs",
-    "WorldName": "VintageDockerExample",
+    "WorldName": "VintageDockerCustomExample",
     "AllowCreativeMode": true,
     "PlayStyle": "surviveandbuild",
     "PlayStyleLangCode": "surviveandbuild-bands",
@@ -27,12 +25,13 @@
     "WorldConfiguration": null,
     "MapSizeY": null,
     "CreatedByPlayerName": null,
-    "DisabledMods": null
+    "DisabledMods": null,
+    "RepairMode": false
   },
   "NextPlayerGroupUid": 10,
   "GroupChatHistorySize": 20,
   "MaxOwnedGroupChannelsPerUser": 10,
-  "ServerName": "DE - VintageDockerExample - CustomBuild",
+  "ServerName": "EN - Vintage Story Server - CustomBuild",
   "ServerUrl": null,
   "ServerDescription": "VintageServer running in Docker container",
   "WelcomeMessage": "Welcome {0}, may you survive well and prosper",
@@ -42,10 +41,10 @@
   "CompressPackets": true,
   "AdvertiseServer": true,
   "MaxClients": 16,
-  "Password": "",
+  "Password": null,
   "MaxChunkRadius": 12,
   "TickTime": 33.3333321,
-  "BlockTickChunkRange": 3,
+  "BlockTickChunkRange": 4,
   "MaxMainThreadBlockTicks": 10000,
   "RandomBlockTicksPerChunk": 16,
   "BlockTickInterval": 300,
@@ -319,9 +318,7 @@
         "root",
         "commandplayer",
         "controlplayergroups",
-        "manageplayergroups",
-        "worldedit",
-        "denybreakreinforced"
+        "manageplayergroups"
       ],
       "RuntimePrivileges": [],
       "DefaultGameMode": 1,
@@ -343,5 +340,10 @@
   "DefaultSpawn": null,
   "AllowPvP": false,
   "AllowFireSpread": true,
-  "AllowFallingBlocks": true
+  "AllowFallingBlocks": true,
+  "StartupCommands": null,
+  "RepairMode": false,
+  "RegenerateCorruptChunks": false,
+  "ChatRateLimitMs": 1000,
+  "DieBelowDiskSpaceMb": 200
 }

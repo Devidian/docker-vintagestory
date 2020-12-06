@@ -1,15 +1,15 @@
 # ============== runtime stage ==================
-FROM devidian/vintagestory:unstable as runtime
+FROM devidian/vintagestory:latest as runtime
+
+ARG vs_data_path=/gamedata/vs-custom
+
+# update with your own serverconfig
+COPY serverconfig.json ${vs_data_path}/serverconfig.json
+# copy mods
+COPY Mods ${vs_data_path}/Mods/
+# copy default player data
+COPY Playerdata ${vs_data_path}/Playerdata/
 
 WORKDIR /game
 
-ENV VSDATAPATH vs-custom
-
-# update with your own serverconfig
-COPY "./serverconfig.json" "/gamedata/${VSDATAPATH}/serverconfig.json"
-
-#  Expose ports
-EXPOSE 42420/tcp
-
-# CMD [ "mono" , "VintagestoryServer.exe", "--dataPath", "/gamedata/${VSDATAPATH}" ]
-CMD mono VintagestoryServer.exe --dataPath "/gamedata/${VSDATAPATH}"
+CMD mono VintagestoryServer.exe --dataPath ${VS_DATA_PATH}
