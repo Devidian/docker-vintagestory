@@ -4,7 +4,7 @@ FROM alpine as downloader
 WORKDIR /download
 
 ARG vs_type=stable
-ARG vs_version=1.14.2
+ARG vs_version=1.14.3
 
 RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_version}.tar.gz"
 RUN tar xzf "vs_server_${vs_version}.tar.gz"
