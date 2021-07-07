@@ -3,7 +3,7 @@ FROM alpine as downloader
 
 WORKDIR /download
 
-ARG vs_type=pre
+ARG vs_type=unstable
 ARG vs_version=1.15.0-rc.1
 
 RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_version}.tar.gz"
