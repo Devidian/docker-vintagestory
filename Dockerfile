@@ -3,8 +3,8 @@ FROM alpine as downloader
 
 WORKDIR /download
 
-ARG vs_type=unstable
-ARG vs_version=1.17.0-rc.8
+ARG vs_type=pre
+ARG vs_version=1.18.0-pre.3
 
 RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_version}.tar.gz"
 RUN tar xzf "vs_server_${vs_version}.tar.gz"
