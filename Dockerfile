@@ -16,9 +16,7 @@ FROM mono:latest as runtime
 COPY --from=downloader "./download/" "/game"
 
 # Defaults
-ARG vs_data_path=/gamedata/vs
-
-COPY "./serverconfig.json" "${vs_data_path}/serverconfig.json"
+ENV vs_data_path=/gamedata/vs
 
 #  Expose ports
 EXPOSE 42420/tcp

@@ -1,36 +1,6 @@
 {
-  "ConfigVersion": "1.0",
-  "ServerMonitor": true,
-  "MasterserverUrl": "http://masterserver.vintagestory.at/api/v1/servers/",
-  "ClientConnectionTimeout": 120,
   "EntityDebugMode": false,
-  "MapSizeX": 1000000,
-  "MapSizeY": 256,
-  "MapSizeZ": 1000000,
-  "ServerLanguage": "en",
-  "SkipEveryChunkRow": 0,
-  "SkipEveryChunkRowWidth": 0,
-  "ModPaths": [
-    "Mods",
-    "/gamedata/vs/Mods"
-  ],
-  "WorldConfig": {
-    "Seed": null,
-    "SaveFileLocation": "/gamedata/vs/Saves/default.vcdbs",
-    "WorldName": "VintageDockerExample",
-    "AllowCreativeMode": true,
-    "PlayStyle": "surviveandbuild",
-    "PlayStyleLangCode": "surviveandbuild-bands",
-    "WorldType": "standard",
-    "WorldConfiguration": null,
-    "MapSizeY": null,
-    "CreatedByPlayerName": null,
-    "DisabledMods": null,
-    "RepairMode": false
-  },
-  "NextPlayerGroupUid": 10,
-  "GroupChatHistorySize": 20,
-  "MaxOwnedGroupChannelsPerUser": 10,
+  "ConfigVersion": "1.5",
   "ServerName": "EN - Vintage Story Server",
   "ServerUrl": null,
   "ServerDescription": "VintageServer running in Docker container",
@@ -41,19 +11,30 @@
   "CompressPackets": true,
   "AdvertiseServer": true,
   "MaxClients": 16,
+  "PassTimeWhenEmpty": false,
+  "MasterserverUrl": "http://masterserver.vintagestory.at/api/v1/servers/",
+  "ModDbUrl": "https://mods.vintagestory.at/",
+  "ClientConnectionTimeout": 120,
   "Password": null,
+  "MapSizeX": 1000000,
+  "MapSizeY": 256,
+  "MapSizeZ": 1000000,
+  "ServerLanguage": "en",
   "MaxChunkRadius": 12,
   "TickTime": 33.3333321,
+  "SpawnCapPlayerScaling": 0.75,
   "BlockTickChunkRange": 4,
   "MaxMainThreadBlockTicks": 10000,
   "RandomBlockTicksPerChunk": 16,
   "BlockTickInterval": 300,
+  "SkipEveryChunkRow": 0,
+  "SkipEveryChunkRowWidth": 0,
   "Roles": [
     {
       "Code": "suvisitor",
+      "PrivilegeLevel": -1,
       "Name": "Survival Visitor",
       "Description": "Can only visit this world and chat but not use/place/break anything",
-      "PrivilegeLevel": -1,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -73,9 +54,9 @@
     },
     {
       "Code": "crvisitor",
+      "PrivilegeLevel": -1,
       "Name": "Creative Visitor",
       "Description": "Can only visit this world, chat and fly but not use/place/break anything",
-      "PrivilegeLevel": -1,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -95,9 +76,9 @@
     },
     {
       "Code": "limitedsuplayer",
+      "PrivilegeLevel": -1,
       "Name": "Limited Survival Player",
       "Description": "Can use/place/break blocks only in permitted areas (priv level -1), create/manage player groups and chat",
-      "PrivilegeLevel": -1,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -107,7 +88,8 @@
         "build",
         "useblock",
         "attackcreatures",
-        "attackplayers"
+        "attackplayers",
+        "selfkill"
       ],
       "RuntimePrivileges": [],
       "DefaultGameMode": 1,
@@ -123,9 +105,9 @@
     },
     {
       "Code": "limitedcrplayer",
+      "PrivilegeLevel": -1,
       "Name": "Limited Creative Player",
       "Description": "Can use/place/break blocks in only in permitted areas (priv level -1), create/manage player groups, chat, fly and set his own game mode (= allows fly and change of move speed)",
-      "PrivilegeLevel": -1,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -137,7 +119,8 @@
         "gamemode",
         "freemove",
         "attackcreatures",
-        "attackplayers"
+        "attackplayers",
+        "selfkill"
       ],
       "RuntimePrivileges": [],
       "DefaultGameMode": 2,
@@ -153,9 +136,9 @@
     },
     {
       "Code": "suplayer",
+      "PrivilegeLevel": 0,
       "Name": "Survival Player",
       "Description": "Can use/place/break blocks in unprotected areas (priv level 0), create/manage player groups and chat. Can claim an area of up to 8 chunks.",
-      "PrivilegeLevel": 0,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -166,7 +149,8 @@
         "build",
         "useblock",
         "attackcreatures",
-        "attackplayers"
+        "attackplayers",
+        "selfkill"
       ],
       "RuntimePrivileges": [],
       "DefaultGameMode": 1,
@@ -182,9 +166,9 @@
     },
     {
       "Code": "crplayer",
+      "PrivilegeLevel": 100,
       "Name": "Creative Player",
       "Description": "Can use/place/break blocks in all areas (priv level 100), create/manage player groups, chat, fly and set his own game mode (= allows fly and change of move speed). Can claim an area of up to 40 chunks.",
-      "PrivilegeLevel": 100,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -197,7 +181,8 @@
         "gamemode",
         "freemove",
         "attackcreatures",
-        "attackplayers"
+        "attackplayers",
+        "selfkill"
       ],
       "RuntimePrivileges": [],
       "DefaultGameMode": 2,
@@ -213,9 +198,9 @@
     },
     {
       "Code": "sumod",
+      "PrivilegeLevel": 200,
       "Name": "Survival Moderator",
       "Description": "Can use/place/break blocks everywhere (priv level 200), create/manage player groups, chat, kick/ban players and do serverwide announcements. Can claim an area of up to 4 chunks.",
-      "PrivilegeLevel": 200,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -232,7 +217,8 @@
         "announce",
         "readlists",
         "attackcreatures",
-        "attackplayers"
+        "attackplayers",
+        "selfkill"
       ],
       "RuntimePrivileges": [],
       "DefaultGameMode": 1,
@@ -248,9 +234,9 @@
     },
     {
       "Code": "crmod",
+      "PrivilegeLevel": 500,
       "Name": "Creative Moderator",
       "Description": "Can use/place/break blocks everywhere (priv level 500), create/manage player groups, chat, kick/ban players, fly and set his own or other players game modes (= allows fly and change of move speed). Can claim an area of up to 40 chunks.",
-      "PrivilegeLevel": 500,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -270,7 +256,8 @@
         "announce",
         "readlists",
         "attackcreatures",
-        "attackplayers"
+        "attackplayers",
+        "selfkill"
       ],
       "RuntimePrivileges": [],
       "DefaultGameMode": 2,
@@ -286,9 +273,9 @@
     },
     {
       "Code": "admin",
+      "PrivilegeLevel": 99999,
       "Name": "Admin",
       "Description": "Has all privileges, including giving other players admin status.",
-      "PrivilegeLevel": 99999,
       "DefaultSpawn": null,
       "ForcedSpawn": null,
       "Privileges": [
@@ -318,7 +305,8 @@
         "root",
         "commandplayer",
         "controlplayergroups",
-        "manageplayergroups"
+        "manageplayergroups",
+        "selfkill"
       ],
       "RuntimePrivileges": [],
       "DefaultGameMode": 1,
@@ -334,16 +322,41 @@
     }
   ],
   "DefaultRoleCode": "suplayer",
+  "ModPaths": [
+    "Mods",
+    "/gamedata/vs/Mods"
+  ],
   "AntiAbuse": 0,
+  "WorldConfig": {
+    "Seed": null,
+    "SaveFileLocation": "/gamedata/Saves/default.vcdbs",
+    "WorldName": "VintageDockerExample",
+    "AllowCreativeMode": true,
+    "PlayStyle": "surviveandbuild",
+    "PlayStyleLangCode": "surviveandbuild-bands",
+    "WorldType": "standard",
+    "WorldConfiguration": null,
+    "MapSizeY": null,
+    "CreatedByPlayerName": null,
+    "DisabledMods": null,
+    "RepairMode": false
+  },
+  "NextPlayerGroupUid": 10,
+  "GroupChatHistorySize": 20,
+  "MaxOwnedGroupChannelsPerUser": 10,
   "OnlyWhitelisted": false,
   "VerifyPlayerAuth": true,
   "DefaultSpawn": null,
   "AllowPvP": false,
   "AllowFireSpread": true,
   "AllowFallingBlocks": true,
+  "HostedMode": false,
   "StartupCommands": null,
   "RepairMode": false,
+  "AnalyzeMode": false,
+  "CorruptionProtection": true,
   "RegenerateCorruptChunks": false,
   "ChatRateLimitMs": 1000,
-  "DieBelowDiskSpaceMb": 200
+  "DieBelowDiskSpaceMb": 400,
+  "ModIdBlackList": null
 }

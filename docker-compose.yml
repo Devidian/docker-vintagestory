@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  # docker compose up -d vsserver-local
+  vsserver-local:
+    build: .
+    container_name: vsserver-local
+    restart: unless-stopped
+    volumes:
+      - ./compose-default:/gamedata
+    ports:
+      - 42420:42420
+    environment:
+      VS_DATA_PATH: /gamedata
+  # docker compose up -d vsserver-stable
+  vsserver-stable:
+    image: devidian/vintagestory:latest
+    container_name: vsserver-stable
+    restart: unless-stopped
+    volumes:
+      - /appdata/vintagestory:/gamedata
+    ports:
+      - 42430:42420
+    environment:
+      VS_DATA_PATH: /gamedata
+  # docker compose up -d vsserver-unstable
+  vsserver-unstable:
+    image: devidian/vintagestory:unstable
+    container_name: vsserver-unstable
+    restart: unless-stopped
+    volumes:
+      - /appdata/vintagestory-unstable:/gamedata
+    ports:
+      - 42440:42420
+    environment:
+      VS_DATA_PATH: /gamedata
+  # docker compose up -d vsserver-pre
+  vsserver-pre:
+    image: devidian/vintagestory:pre
+    container_name: vsserver-pre
+    restart: unless-stopped
+    volumes:
+      - /appdata/vintagestory-pre:/gamedata
+    ports:
+      - 42435:42420
+    environment:
+      VS_DATA_PATH: /gamedata
