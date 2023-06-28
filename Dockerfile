@@ -4,7 +4,7 @@ FROM alpine as downloader
 WORKDIR /download
 
 ARG vs_type=stable
-ARG vs_version=1.18.5
+ARG vs_version=1.18.6
 
 RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_version}.tar.gz"
 RUN tar xzf "vs_server_${vs_version}.tar.gz"
@@ -16,7 +16,7 @@ FROM mono:latest as runtime
 COPY --from=downloader "./download/" "/game"
 
 # Defaults
-ENV vs_data_path=/gamedata/vs
+ENV VS_DATA_PATH=/gamedata/vs
 
 #  Expose ports
 EXPOSE 42420/tcp
