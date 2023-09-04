@@ -3,7 +3,9 @@ version: '3.8'
 services:
   # docker compose up -d vsserver-local
   vsserver-local:
-    build: .
+    build: 
+      no_cache: true
+      dockerfile: ./Dockerfile
     container_name: vsserver-local
     restart: unless-stopped
     volumes:
