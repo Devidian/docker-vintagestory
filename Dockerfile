@@ -5,7 +5,7 @@ WORKDIR /download
 
 ARG vs_type=stable
 ARG vs_os=linux-x64
-ARG vs_version=1.19.0
+ARG vs_version=1.19.1
 
 RUN apt update
 RUN apt install -y wget
