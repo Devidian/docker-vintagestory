@@ -1,28 +1,28 @@
 # ============== download stage ==================
-FROM alpine as downloader
+FROM debian:latest as downloader
 
 WORKDIR /download
 
 ARG vs_type=unstable
-ARG vs_version=1.18.2-rc.1
+ARG vs_os=linux-x64
+ARG vs_version=1.20.0-rc.8
 
-RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_version}.tar.gz"
-RUN tar xzf "vs_server_${vs_version}.tar.gz"
-RUN rm "vs_server_${vs_version}.tar.gz"
+RUN apt update
+RUN apt install -y wget
+
+RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_os}_${vs_version}.tar.gz"
+RUN tar -xvzf "vs_server_${vs_os}_${vs_version}.tar.gz"
+RUN rm "vs_server_${vs_os}_${vs_version}.tar.gz"
 
 # ============== runtime stage ==================
-FROM mono:latest as runtime
-
-COPY --from=downloader "./download/" "/game"
-
+FROM mcr.microsoft.com/dotnet/sdk:7.0 as runtime
+WORKDIR /game
 # Defaults
-ARG vs_data_path=/gamedata/vs
-
-COPY "./serverconfig.json" "${vs_data_path}/serverconfig.json"
+ENV VS_DATA_PATH=/gamedata/vs
+COPY --from=downloader "./download/" "/game"
 
 #  Expose ports
 EXPOSE 42420/tcp
 
-WORKDIR /game
 # Execution command
-CMD mono VintagestoryServer.exe --dataPath ${VS_DATA_PATH}
+CMD  dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
