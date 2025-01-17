@@ -5,7 +5,7 @@ WORKDIR /download
 
 ARG vs_type=unstable
 ARG vs_os=linux-x64
-ARG vs_version=1.20.0-rc.8
+ARG vs_version=1.20.0-rc.9
 
 RUN apt update
 RUN apt install -y wget
