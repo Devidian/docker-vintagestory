@@ -1,5 +1,5 @@
 # ============== download stage ==================
-FROM debian:latest as downloader
+FROM alpine:latest AS downloader
 
 WORKDIR /download
 
@@ -7,8 +7,8 @@ ARG vs_type=stable
 ARG vs_os=linux-x64
 ARG vs_version=1.20.3
 
-RUN apt update
-RUN apt install -y wget
+RUN apk update
+RUN apk add wget tar
 
 RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_os}_${vs_version}.tar.gz"
 RUN tar -xvzf "vs_server_${vs_os}_${vs_version}.tar.gz"
