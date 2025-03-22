@@ -1,28 +1,19 @@
-# ============== download stage ==================
-FROM debian:latest as downloader
-
-WORKDIR /download
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS runtime
 
 ARG vs_type=stable
 ARG vs_os=linux-x64
 ARG vs_version=1.20.6
 
-RUN apt update
-RUN apt install -y wget
-
-RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_os}_${vs_version}.tar.gz"
-RUN tar -xvzf "vs_server_${vs_os}_${vs_version}.tar.gz"
-RUN rm "vs_server_${vs_os}_${vs_version}.tar.gz"
-
-# ============== runtime stage ==================
-FROM mcr.microsoft.com/dotnet/sdk:7.0 as runtime
 WORKDIR /game
-# Defaults
-ENV VS_DATA_PATH=/gamedata/vs
-COPY --from=downloader "./download/" "/game"
 
-#  Expose ports
+ADD "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_os}_${vs_version}.tar.gz" vs_server.tar.gz
+
+RUN set -eux; \
+    tar -xvzf vs_server.tar.gz; \
+    rm vs_server.tar.gz
+
+ENV VS_DATA_PATH=/gamedata/vs
+
 EXPOSE 42420/tcp
 
-# Execution command
-CMD  dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
+CMD dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
