@@ -11,10 +11,8 @@ To run this image you can use `docker run -pd 42420:42420 --name VintageStorySer
 To run this image with docker compose you can start using the following file:
 
 ```yaml
-version: "3.8"
-
 services:
-  vsserver:
+  vsserver-stable:
     image: devidian/vintagestory:latest
     container_name: vsserver
     restart: unless-stopped
@@ -25,6 +23,8 @@ services:
       - /appdata/vintagestory:/gamedata
     ports:
       - 42420:42420
+    environment:
+      VS_DATA_PATH: /gamedata
 ```
 
 ### Using unstable versions
@@ -38,6 +38,31 @@ To update to the latest version call `docker compose pull` first, this will down
 ### Copy/Override files
 
 If you use a host volume, you can just edit files there. First stop the container, then make your changes and start the container again.
+
+### Running in TrueNAS
+
+If you have any issues with the hoxst volume mount try this yml:
+
+```yaml
+services:
+  vsserver-stable:
+    image: devidian/vintagestory:latest
+    container_name: vsserver
+    restart: unless-stopped
+    volumes:
+      - vsdata:/gamedata
+    ports:
+      - 42420:42420
+    environment:
+      VS_DATA_PATH: /gamedata
+volumes:
+  vsdata:
+```
+
+After it spins up the container you might have to connect to your container shell, install nano and edit `/gamedata/vs/serverconfig.json` (see First run Info below)
+
+If you have trouble to get admin state, just login, logout, edit `/gamedata/vs/Playerdata/playerdata.json` and change your role to admin. 
+Then change the file to readonly with `chmod -w [file]` and restart the container.
 
 ## Troubleshooting / Help / Issues
 
