@@ -5,7 +5,7 @@ WORKDIR /download
 
 ARG vs_type=stable
 ARG vs_os=linux-x64
-ARG vs_version=1.20.7
+ARG vs_version=1.20.8
 
 RUN apt update
 RUN apt install -y wget
@@ -22,7 +22,7 @@ ENV VS_DATA_PATH=/gamedata/vs
 COPY --from=downloader "./download/" "/game"
 
 #  Expose ports
-EXPOSE 42420/tcp
+EXPOSE 42420
 
 # Execution command
 CMD  dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
