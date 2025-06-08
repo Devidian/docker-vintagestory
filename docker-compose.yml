@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # docker compose up -d vsserver-local
   vsserver-local:
@@ -12,8 +10,11 @@ services:
       - ./compose-default:/gamedata
     ports:
       - 42420:42420
+    user: "${UID}:${GID}"
     environment:
       VS_DATA_PATH: /gamedata
+      UID: 1002
+      GID: 1002
   # docker compose up -d vsserver-stable
   vsserver-stable:
     image: devidian/vintagestory:latest
