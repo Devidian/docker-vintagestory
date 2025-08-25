@@ -25,4 +25,4 @@ COPY --from=downloader "./download/" "/game"
 EXPOSE 42420
 
 # Execution command
-CMD ["dotnet", "VintagestoryServer.dll", "--dataPath", "$VS_DATA_PATH"]
+CMD dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
