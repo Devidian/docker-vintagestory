@@ -15,7 +15,7 @@ RUN tar -xvzf "vs_server_${vs_os}_${vs_version}.tar.gz"
 RUN rm "vs_server_${vs_os}_${vs_version}.tar.gz"
 
 # ============== runtime stage ==================
-FROM mcr.microsoft.com/dotnet/sdk:8.0 as runtime
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS runtime
 WORKDIR /game
 # Defaults
 ENV VS_DATA_PATH=/gamedata/vs
@@ -25,4 +25,4 @@ COPY --from=downloader "./download/" "/game"
 EXPOSE 42420
 
 # Execution command
-ENTRYPOINT [ "dotnet", "VintagestoryServer.dll", "--dataPath", "$VS_DATA_PATH" ]
+CMD dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
