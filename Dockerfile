@@ -25,4 +25,4 @@ COPY --from=downloader "./download/" "/game"
 EXPOSE 42420
 
 # Execution command
-ENTRYPOINT [ "dotnet", "VintagestoryServer.dll", "--dataPath", "$VS_DATA_PATH" ]
+ENTRYPOINT [ "dotnet", "VintagestoryServer.dll", "--dataPath", $VS_DATA_PATH ]

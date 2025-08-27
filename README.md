@@ -61,7 +61,7 @@ volumes:
 
 After it spins up the container you might have to connect to your container shell, install nano and edit `/gamedata/vs/serverconfig.json` (see First run Info below)
 
-If you have trouble to get admin state, just login, logout, edit `/gamedata/vs/Playerdata/playerdata.json` and change your role to admin. 
+If you have trouble to get admin state, just login, logout, edit `/gamedata/vs/Playerdata/playerdata.json` and change your role to admin.
 Then change the file to readonly with `chmod -w [file]` and restart the container.
 
 ## Troubleshooting / Help / Issues
@@ -108,3 +108,7 @@ Here a list of commands i usually execute on a new server. Most of them make the
 | `/worldconfig deathPunishment keep`        | The game feels to hardcore with the default value drop, especially at the beginning |
 | `/worldconfig temporalStorms veryrare`     | We dont want to set them off but default is to often                                |
 | `/worldconfig temporalRifts off`           | They suck on startup                                                                |
+
+## Troubleshooting
+
+If you encounter any problems or want to help feel free to contact me on Discord. If you want to log into your running container to debug use: `docker exec -it [containername] sh`
