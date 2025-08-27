@@ -24,5 +24,7 @@ COPY --from=downloader "./download/" "/game"
 #  Expose ports
 EXPOSE 42420
 
+# see https://docs.docker.com/reference/build-checks/json-args-recommended/
+SHELL [ "sh", "-c" ]
 # Execution command
 ENTRYPOINT dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
