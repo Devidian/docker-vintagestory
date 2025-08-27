@@ -109,6 +109,6 @@ Here a list of commands i usually execute on a new server. Most of them make the
 | `/worldconfig temporalStorms veryrare`     | We dont want to set them off but default is to often                                |
 | `/worldconfig temporalRifts off`           | They suck on startup                                                                |
 
-## Troubleshooting
+## Docker commands
 
-If you encounter any problems or want to help feel free to contact me on Discord. If you want to log into your running container to debug use: `docker exec -it [containername] sh`
+If you want to log into your running container to debug use: `docker exec -it [containername] sh`
