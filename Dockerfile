@@ -10,21 +10,19 @@ ARG vs_version=1.21.4
 RUN apk update
 RUN apk add wget tar
 
-RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_os}_${vs_version}.tar.gz"
-RUN tar -xvzf "vs_server_${vs_os}_${vs_version}.tar.gz"
-RUN rm "vs_server_${vs_os}_${vs_version}.tar.gz"
+RUN wget "https://cdn.vintagestory.at/gamefiles/${vs_type}/vs_server_${vs_os}_${vs_version}.tar.gz" && \
+  tar -xvzf "vs_server_${vs_os}_${vs_version}.tar.gz" && \
+  rm "vs_server_${vs_os}_${vs_version}.tar.gz"
 
 # ============== runtime stage ==================
-FROM mcr.microsoft.com/dotnet/sdk:8.0 as runtime
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS runtime
 WORKDIR /game
 # Defaults
 ENV VS_DATA_PATH=/gamedata/vs
 COPY --from=downloader "./download/" "/game"
+COPY entrypoint.sh "/game"
 
 #  Expose ports
 EXPOSE 42420
 
-# see https://docs.docker.com/reference/build-checks/json-args-recommended/
-SHELL [ "sh", "-c" ]
-# Execution command
-ENTRYPOINT dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
+CMD ["/game/entrypoint.sh"]
