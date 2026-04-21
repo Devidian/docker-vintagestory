@@ -48,3 +48,29 @@ services:
       - 42435:42420
     environment:
       VS_DATA_PATH: /gamedata
+  vsserver-tty:
+    image: devidian/vintagestory:latest
+    tty: true
+    stdin_open: true
+    container_name: vsserver-tty-example
+    restart: unless-stopped
+    volumes:
+      - /appdata/vintagestory:/gamedata
+    ports:
+      - 42430:42420
+    environment:
+      VS_DATA_PATH: /gamedata
+  vsserver-local-tty:
+    build: 
+      no_cache: true
+      dockerfile: ./Dockerfile
+    tty: true
+    stdin_open: true
+    container_name: vsserver-local-tty-example
+    restart: unless-stopped
+    volumes:
+      - ./compose-default:/gamedata
+    ports:
+      - 42420:42420
+    environment:
+      VS_DATA_PATH: /gamedata

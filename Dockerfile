@@ -5,7 +5,7 @@ WORKDIR /download
 
 ARG vs_type=stable
 ARG vs_os=linux-x64
-ARG vs_version=1.21.7
+ARG vs_version=1.22.0
 
 RUN apk update
 RUN apk add wget tar
@@ -15,16 +15,19 @@ RUN tar -xvzf "vs_server_${vs_os}_${vs_version}.tar.gz"
 RUN rm "vs_server_${vs_os}_${vs_version}.tar.gz"
 
 # ============== runtime stage ==================
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS runtime
 WORKDIR /game
 # Defaults
 ENV VS_DATA_PATH=/gamedata/vs
+ENV TERM=xterm
+STOPSIGNAL SIGINT
+
 COPY --from=downloader "./download/" "/game"
 
 #  Expose ports
 EXPOSE 42420
 
 # see https://docs.docker.com/reference/build-checks/json-args-recommended/
-SHELL [ "/bin/bash", "-c" ]
+# SHELL [ "/bin/bash", "-c" ]
 # Execution command
-ENTRYPOINT dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
+ENTRYPOINT ["/bin/bash", "-c", "exec dotnet VintagestoryServer.dll --dataPath ${VS_DATA_PATH}"]
