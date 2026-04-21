@@ -1,0 +1,345 @@
+21.4.2026 06:42:01 [Notification] Server logger started.
+21.4.2026 06:42:01 [Notification] Game Version: v1.22.0-rc.10 (Unstable)
+21.4.2026 06:42:01 [Notification] C# Framework: .net 10.0.6
+21.4.2026 06:42:01 [Notification] Zstd Version: 1.5.5
+21.4.2026 06:42:01 [Notification] Operating System: Linux (Ubuntu 24.04.4 LTS) [Kernel 6.6.87.2]
+21.4.2026 06:42:01 [Notification] CPU Cores: 12
+21.4.2026 06:42:01 [Notification] CPU: Intel(R) Core(TM) i5-10600K CPU @ 4.10GHz
+21.4.2026 06:42:01 [Notification] Available RAM: 31539 MB
+21.4.2026 06:42:01 [Event] It begins...
+21.4.2026 06:42:01 [Event] Launching server...
+21.4.2026 06:42:01 [Event] It senses...
+21.4.2026 06:42:01 [Event] Server v1.22.0-rc.10, network v1.22.6, api v1.21.0
+21.4.2026 06:42:01 [Notification] Entering runphase Initialization
+21.4.2026 06:42:01 [Event] Loading configuration...
+21.4.2026 06:42:01 [Notification] Entering runphase Configuration
+21.4.2026 06:42:02 [Notification] Loading savegame
+21.4.2026 06:42:02 [Notification] Loaded existing save game data. Playstyle: surviveandbuild, Playstyle Lang code: surviveandbuild-bands, WorldType: standard
+21.4.2026 06:42:02 [Notification] Savegame /gamedata/Saves/default.vcdbs loaded
+21.4.2026 06:42:02 [Notification] World size = 1024000 256 1024000
+21.4.2026 06:42:02 [Notification] Start discovering assets
+21.4.2026 06:42:02 [Notification] Found 2 base assets in category blocktypes
+21.4.2026 06:42:02 [Notification] Found 0 base assets in category itemtypes
+21.4.2026 06:42:02 [Notification] Found 34 base assets in category lang
+21.4.2026 06:42:02 [Notification] Found 0 base assets in category patches
+21.4.2026 06:42:02 [Notification] Found 24 base assets in category config
+21.4.2026 06:42:02 [Notification] Found 0 base assets in category worldproperties
+21.4.2026 06:42:02 [Notification] Found 1 base assets in category sounds
+21.4.2026 06:42:02 [Notification] Found 230 base assets in category shapes
+21.4.2026 06:42:02 [Notification] Found 21 base assets in category textures
+21.4.2026 06:42:02 [Notification] Found 0 base assets in category recipes
+21.4.2026 06:42:02 [Notification] Found 0 base assets in category worldgen
+21.4.2026 06:42:02 [Notification] Found 3 base assets in category entities
+21.4.2026 06:42:02 [Notification] Found 315 base assets in total
+21.4.2026 06:42:02 [Event] Building assets...
+21.4.2026 06:42:02 [Notification] Entering runphase LoadAssets
+21.4.2026 06:42:02 [Notification] Will search the following paths for mods:
+21.4.2026 06:42:02 [Notification]     /game/Mods
+21.4.2026 06:42:02 [Notification]     /gamedata/vs/Mods (Not found?)
+21.4.2026 06:42:03 [Notification] Found 3 mods (0 disabled)
+21.4.2026 06:42:03 [Notification] Mods, sorted by dependency: game, creative, survival
+21.4.2026 06:42:03 [Notification] Instantiated 148 mod systems from 3 enabled mods
+21.4.2026 06:42:03 [Notification] External Origins in load order: modorigin@/game/assets/creative/, modorigin@/game/assets/survival/
+21.4.2026 06:42:03 [Notification] Found 541 external assets in category blocktypes
+21.4.2026 06:42:03 [Notification] Found 315 external assets in category itemtypes
+21.4.2026 06:42:03 [Notification] Found 0 external assets in category lang
+21.4.2026 06:42:03 [Notification] Found 10 external assets in category patches
+21.4.2026 06:42:03 [Notification] Found 127 external assets in category config
+21.4.2026 06:42:03 [Notification] Found 25 external assets in category worldproperties
+21.4.2026 06:42:03 [Notification] Found 1 external assets in category sounds
+21.4.2026 06:42:03 [Notification] Found 6123 external assets in category shapes
+21.4.2026 06:42:03 [Notification] Found 25 external assets in category textures
+21.4.2026 06:42:03 [Notification] Found 418 external assets in category recipes
+21.4.2026 06:42:03 [Notification] Found 1343 external assets in category worldgen
+21.4.2026 06:42:03 [Notification] Found 74 external assets in category entities
+21.4.2026 06:42:03 [Notification] Found 0 external assets in category compatibility
+21.4.2026 06:42:03 [Notification] Reloaded lang file with mod assets
+21.4.2026 06:42:03 [Notification] Compatibility lib: 0 assets added, 0 assets replaced.
+21.4.2026 06:42:03 [Notification] JsonPatch Loader: 14 patches total, successfully applied 14 patches, unmet conditions on 23 patches, no errors
+21.4.2026 06:42:05 [Event] It remembers...
+21.4.2026 06:42:09 [Notification] Loaded 4468 unique items
+21.4.2026 06:42:09 [Event] All that came before...
+21.4.2026 06:42:18 [Notification] Loaded 14089 unique blocks
+21.4.2026 06:42:19 [Notification] Loaded 820 unique entitiess
+21.4.2026 06:42:19 [Notification] BlockLoader: Entities, Blocks and Items loaded
+21.4.2026 06:42:19 [Notification] Remapper: No applicable remappings found for this save game, all seems good for now
+21.4.2026 06:42:19 [Event] Remapping blocks and items...
+21.4.2026 06:42:19 [Event] 15 cooking recipes loaded
+21.4.2026 06:42:19 [Event] Taste and smell...
+21.4.2026 06:42:19 [Event] 9 metal alloys loaded
+21.4.2026 06:42:19 [Event] Glimmers in the soil...
+21.4.2026 06:42:24 [Event] 1145 grid recipes loaded from 267 files
+21.4.2026 06:42:24 [Event] Grand inventions...
+21.4.2026 06:42:24 [Event] 44 smithing recipes loaded from 43 files
+21.4.2026 06:42:24 [Event] Burning sparks...
+21.4.2026 06:42:24 [Event] 31 clay forming recipes loaded from 31 files
+21.4.2026 06:42:24 [Event] Molded forms...
+21.4.2026 06:42:24 [Event] 12 knapping recipes loaded from 12 files
+21.4.2026 06:42:24 [Event] Simple tools...
+21.4.2026 06:42:24 [Event] 90 barrel recipe recipes loaded from 41 files
+21.4.2026 06:42:24 [Notification] Tags registry was locked.
+21.4.2026 06:42:24 [Notification] Entering runphase AssetsFinalize
+21.4.2026 06:42:27 [Event] Server assets loaded, parsed, registered and finalized
+21.4.2026 06:42:27 [Event] Initialising systems...
+21.4.2026 06:42:27 [Notification] Entering runphase LoadGamePre
+21.4.2026 06:42:27 [Notification] Reloaded 19 weather patterns, 5 wind patterns and 5 weather events
+21.4.2026 06:42:27 [Notification] Started 125 systems on Server:
+21.4.2026 06:42:27 [Notification]     Mod 'VSEssentials.dll' (game):
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.Core
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenTerra
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenSnowLayer
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.EntityPartitioning
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ErrorReporter
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenTerraPostProcess
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.ModCompatiblityUtil
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.NoObf.ModJsonPatchLoader
+21.4.2026 06:42:27 [Notification]         FluffyClouds.FluffyCloudsModSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.Systems.ModSystemTfEditFromAttributes
+21.4.2026 06:42:27 [Notification]         Vintagestory.Essentials.PathfindSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.Essentials.PathFindDebug
+21.4.2026 06:42:27 [Notification]         Vintagestory.Essentials.PathfindingAsync
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.JsonExport
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.ModBasicBlocksLoader
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenMaps
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenRockStrataNew
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenHotSprings
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenCreatures
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.ModSystemWorldGenStructures
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemItemRendererOptimizer
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.AiRuntimeConfig
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemSyncHarvestableDropsToClient
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemEmotes
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.LeafBlockDecay
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.POIRegistry
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.RoomRegistry
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.WeatherSystemCommands
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.WeatherSystemServer
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.SystemRemotePlayerTracking
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.WorldMapManager
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenDeposits
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.NoObf.ModRegistryObjectTypeLoader
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.LoadColorMaps
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenCaves
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenStructures
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.WgenCommands
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenBlockLayers
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenPonds
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ClothManager
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenStructuresPosPass
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenVegetationAndPatches
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenRivulets
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenLightSurvival
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.CollectibleBuffDebug
+21.4.2026 06:42:27 [Notification]     Mod 'VSSurvivalMod.dll' (survival):
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemControlPoints
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.SurvivalCoreSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.Systems.StoryLockableDoor
+21.4.2026 06:42:27 [Notification]         Vintagestory.Client.NoObf.StoryGenFailedSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.UpgradeTasks
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.ChiselBlockBulkSetMaterial
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.ModSystemDetailModeSync
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.NpcControl
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.ModSystemTiledDungeons
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemExplosionAffectedStability
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.MyceliumSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModsystemButterflySpawnCondsExtra
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemFishInstaFlee
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemCatchCreature
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.FishingSupportModSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemGliding
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemSnowShoveling
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemSubTongsDurability
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemSwoopDev
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.Timeswitch
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ClutterBookshelfUtil
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ScreenshakeToClientModSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemResoArchiveCommands
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.StoryStructuresSpawnConditions
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemNPCHairStyling
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemSkinnableAdditions
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemVillagerDebug
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemAuction
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemBlockReinforcement
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.Core
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemBoatingSoundAndRatlineStamina
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.CharacterSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.CustomSpawnConditions
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.VariablesModSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModsystemElevator
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ActivityModSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ActivityEditorSystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemFarming
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemCommandHandbook
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemTutorial
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.HeldItemMouseInputHandler
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemCorpseReturnTeleporter
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemNightVision
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.TobiasTeleporter
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModJournal
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.LiquidItemStackRenderer
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemStructureLocator
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModLootRandomizer
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemEntityOwnership
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemRifts
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemRiftWeather
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSleeping
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemSupportBeamPlacer
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.TeleporterManager
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModTemperature
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.SystemTemporalStability
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.TemporalStabilityEffects
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemClimateSpecificTraderTypes
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemWearableStats
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemEditableBook
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.Mechanics.ModSystemWindTurbulence
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.Mechanics.MechanicalPowerMod
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenDungeons
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.GenStoryStructures
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.WgenCommandsExt
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenDevastationLayer
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.RecipeRegistrySystem
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.RecipeLoader
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemFishDepletion
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemWormGrunting
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemFireFromLightning
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemOreMap
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemSnowballs
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.HumanoidOutfits
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.ModSystemDevastationEffects
+21.4.2026 06:42:27 [Notification]         Vintagestory.GameContent.DisableRecipeRegisteringSystem
+21.4.2026 06:42:27 [Notification]     Mod 'VSCreativeMod.dll' (creative):
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.Core
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.WorldEdit.WorldEdit
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenBlockLayersFlat
+21.4.2026 06:42:27 [Notification]         Vintagestory.ServerMods.GenLightCreative
+21.4.2026 06:42:27 [Event] 26 traits loaded from 1 files
+21.4.2026 06:42:27 [Event] 6 classes loaded from 1 files
+21.4.2026 06:42:32 [Notification] Server map set
+21.4.2026 06:42:32 [Event] A world unbroken...
+21.4.2026 06:42:32 [Notification] Entering runphase GameReady
+21.4.2026 06:42:32 [Notification] Entering runphase WorldReady
+21.4.2026 06:42:32 [Event] The center unfolding...
+21.4.2026 06:42:32 [Event] Starting world generators...
+21.4.2026 06:42:39 [Notification] Reloaded 35 tree generators
+21.4.2026 06:42:40 [Event] Loading 7x7x8 spawn chunks...
+21.4.2026 06:42:40 [Event] 0% (49 in queue)
+21.4.2026 06:42:40 [Event] The carved mountains...
+21.4.2026 06:42:40 [Notification] Message to all in group 0: <strong>Admin:</strong>help
+21.4.2026 06:42:41 [Event] Begin game ticking...
+21.4.2026 06:42:41 [Event] ... it calls to you
+21.4.2026 06:42:41 [Notification] Entering runphase RunGame
+21.4.2026 06:42:41 [Notification] Server Advertising enabled. Attempt to register at the master server.
+21.4.2026 06:42:41 [Notification] Registering to master server...
+21.4.2026 06:42:41 [Notification] Starting server threads
+21.4.2026 06:42:41 [Event] Dedicated Server now running on Port 42420 and all ips!
+21.4.2026 06:42:41 [Event] Return again.
+21.4.2026 06:42:42 [Notification] Master server response status: bad
+21.4.2026 06:42:42 [Notification] Could not register to master server, master server says: port not opened
+21.4.2026 06:42:46 [Notification] Message to all in group 0: <strong>Admin:</strong>help
+21.4.2026 06:42:51 [Warning] Server overloaded. A tick took 1169ms to complete.
+21.4.2026 06:42:54 [Notification] Handling Console Command /help 
+21.4.2026 06:42:54 [Notification] Available commands:
+
+<code>/activate <i>&lt;position&gt;</i> <i>[argument object]</i> </code> :  Runs activate on targeted block with supplied arguments.
+<code>/announce <i>&lt;announcement message&gt;</i> <i>[range]</i> </code> :  Announce a server wide message in all groups. If range is set, then it will only send this message to players in this block range.
+<code>/announcenear <i>[range]</i> <i>&lt;announcement message&gt;</i> </code> :  Announce a server wide message in all groups. Only sends the message to players in given block range.
+<code>/autosavenow </code> :   
+<code>/ban <i>&lt;player name&gt;</i> <i>&lt;duration&gt;</i> <i>&lt;reason&gt;</i> </code> :  Ban a player from the server
+<code>/bir </code> :  Block id remapper info and fixing tool
+<code>/bre </code> :  Player owned Block reinforcement privilege management
+<code>/chbr </code> :  Reload command handbook texts
+<code>/chunk </code> :  Commands affecting chunks.
+<code>/clearinv </code> :  Empties your inventory
+<code>/db </code> :  Save-game related commands
+<code>/debug </code> :  Debug and Developer utilities
+<code>/dev </code> :  Gamedev tools
+<code>/dweather </code> :  Show the current rift activity
+<code>/e </code> :  Entity control via entity selector
+<code>/eir </code> :  Entity code remapper info and fixing tool
+<code>/emote <i>[emote]</i> </code> :  Execute an emote on your player
+<code>/entity </code> :  Entity control via entity selector
+<code>/errorreporter <i>&lt;activate&gt;</i> </code> :  Toggles on/off the error reporting dialog on startup
+<code>/executeas <i>&lt;caller&gt;</i> <i>&lt;command without /&gt;</i> </code> :  Execute command with selected player/entity as the caller, but runs under the caller privileges.
+<code>/fixmapping </code> :   
+<code>/gamemode <i>[playername]</i> <i>[mode]</i> </code> :  Get/Set one players game mode. Omit playername arg to get/set your own game mode
+<code>/gbre </code> :  Group owned Block reinforcement privilege management
+<code>/genbackup <i>[filename]</i> </code> :  Creates a copy of the current save game in the Backups folder
+<code>/giveblock <i>&lt;block code&gt;</i> <i>[quantity]</i> <i>[target]</i> <i>[attributes]</i> </code> :  Give blocks to target
+<code>/giveitem <i>&lt;item code&gt;</i> <i>[quantity]</i> <i>[target]</i> <i>[attributes]</i> </code> :  Give items to target
+<code>/gm <i>[playername]</i> <i>[mode]</i> </code> :  Get/Set one players game mode. Omit playername arg to get/set your own game mode
+<code>/group </code> :  Manage a player group
+<code>/groupinvite <i>&lt;enable&gt;</i> </code> :  Enables or disables group invites to be sent to you
+<code>/hardban <i>&lt;player name&gt;</i> </code> :  Ban a player forever without reason
+<code>/hardstop </code> :   
+<code>/help <i>[commandname]</i> <i>[subcommand]</i> <i>[subsubcommand]</i> </code> :  Display list of available server commands
+<code>/iir </code> :  Item id remapper info and fixing tool
+<code>/info </code> :  Server information
+<code>/ipblock </code> :  Manage the ip block list. This list will be cleared automatically every 10 minutes.
+<code>/kick <i>&lt;player name&gt;</i> <i>[kick reason]</i> </code> :  Kicks a player from the server
+<code>/kill </code> :  Kill yourself
+<code>/land </code> :  Manage land rights
+<code>/list </code> :  Show global lists (clients, banned, roles or privileges)
+<code>/macro </code> :  Manage server side macros
+<code>/moddb </code> :  ModDB utility. To install and remove mods.
+<code>/mystats </code> :  shows players stats
+<code>/nexttempstorm </code> :  Tells you the amount of days until the next storm
+<code>/npc </code> :  npc commands
+<code>/npcs </code> :  Npcs control
+<code>/op <i>&lt;playername&gt;</i> </code> :  Give a player admin status. Shorthand for /player &lt;playername&gt; role admin
+<code>/player <i>&lt;player&gt;</i> </code> :  Player control
+<code>/role <i>&lt;rolename&gt;</i> </code> :  Modify/See player role related data
+<code>/sc </code> :  Read or Set server configuration
+<code>/self </code> :  Information about your player
+<code>/serverconfig </code> :  Read or Set server configuration
+<code>/setambient <i>&lt;json_code&gt;</i> </code> :  Sets the server controlled ambient for everyone. Json format.
+<code>/setblock <i>&lt;block code&gt;</i> <i>&lt;target&gt;</i> </code> :  Set a block at a given location
+<code>/setstorystrucpos <i>&lt;code&gt;</i> <i>&lt;position&gt;</i> <i>[confirm]</i> </code> :  Set the location of a story structure
+<code>/settlpos <i>&lt;translocator position&gt;</i> <i>&lt;target position&gt;</i> <i>[relative]</i> </code> :  Set translocator target teleport position of currently looked at translocator
+<code>/stats <i>[compact]</i> </code> :   
+<code>/stop <i>[exit code]</i> </code> :   
+<code>/time </code> :  Get or set world time or time speed
+<code>/timeswitch </code> :  Timeswitch and dimensions switching commands
+<code>/tp <i>&lt;source&gt;</i> <i>&lt;target&gt;</i> </code> :  Teleport a player or entity to a location
+<code>/tpstoryloc <i>&lt;resonancearchive/lazaret/village/devastationarea/tobiascave/treasurehunter&gt;</i> </code> :  Teleport to a story structure instance
+<code>/tpwp <i>&lt;name&gt;</i> </code> :  Teleport yourself to a waypoint starting with the supplied name
+<code>/unban <i>&lt;player name&gt;</i> </code> :  Remove a player ban
+<code>/upnp <i>[on_off]</i> </code> :  Runtime only setting. When turned on, the server will attempt to set up port forwarding through PMP or UPnP. When turned off, the port forward will be deleted again.
+<code>/waypoint </code> :  Put a waypoint at this location which will be visible for you on the map
+<code>/wc <i>[key]</i> <i>[value]</i> </code> :  Modify the world config
+<code>/wcc <i>&lt;bool/double/float/int/string&gt;</i> <i>&lt;key&gt;</i> <i>&lt;value&gt;</i> </code> :  Add a new world config value
+<code>/we </code> :  Creative mode world editing tools.<br> If you want to enable the old commands you can do so with <a href="chattype:///worldconfigcreate bool legacywecommands true">/worldconfigcreate bool legacywecommands true</a>
+<code>/weather </code> :  Show/Set current weather info
+<code>/wgen </code> :  World generator tools
+<code>/whenwillitstopraining </code> :  When does it finally stop to rain around here?!
+<code>/whitelist </code> :  Whitelist control
+<code>/worldconfig <i>[key]</i> <i>[value]</i> </code> :  Modify the world config
+<code>/worldconfigcreate <i>&lt;bool/double/float/int/string&gt;</i> <i>&lt;key&gt;</i> <i>&lt;value&gt;</i> </code> :  Add a new world config value
+
+Type /help [commandname] to see more info about a command
+21.4.2026 06:43:21 [Notification] Server termination event SIGINT received. Shutting down server
+21.4.2026 06:43:21 [Notification] Server: Exit() called
+21.4.2026 06:43:21 [Notification] Server stop requested, begin shutdown sequence. Stop reason: External close event SIGINT received
+21.4.2026 06:43:21 [Notification] Server ticking has been suspended
+21.4.2026 06:43:21 [Notification] Entering runphase Shutdown
+21.4.2026 06:43:21 [Event] Mods and systems notified, now saving everything...
+21.4.2026 06:43:21 [Event] It pauses.
+21.4.2026 06:43:21 [Event] One last gaze...
+21.4.2026 06:43:21 [Event] Saved player world data...
+21.4.2026 06:43:22 [Event] Saved map regions...
+21.4.2026 06:43:22 [Event] Then all goes quiet...
+21.4.2026 06:43:22 [Event] Saved map chunks...
+21.4.2026 06:43:22 [Event] The waters recede...
+21.4.2026 06:43:22 [Event] Saved loaded chunks...
+21.4.2026 06:43:22 [Event] The mountains fade...
+21.4.2026 06:43:22 [Event] The dark settles in.
+21.4.2026 06:43:22 [Event] Saved generating chunks...
+21.4.2026 06:43:22 [Event] Saved savegamedata...0
+21.4.2026 06:43:22 [Event] World saved! Saved 0 chunks, 0 mapchunks, 14 mapregions.
+21.4.2026 06:43:22 [Event] It sighs...
+21.4.2026 06:43:22 [Event] Shutting down 13 server threads... 
+21.4.2026 06:43:22 [Event] Killed console thread
+21.4.2026 06:43:22 [Event] Alone again...
+21.4.2026 06:43:23 [Event] All threads gracefully shut down
+21.4.2026 06:43:23 [Event] Time to rest.
+21.4.2026 06:43:23 [Event] Doing last tick...
+21.4.2026 06:43:23 [Event] Stopped the server!

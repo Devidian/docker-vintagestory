@@ -9,6 +9,9 @@
     "LastKnownPlayername": "Devidian",
     "CustomPlayerData": {},
     "ExtraLandClaimAllowance": 0,
-    "ExtraLandClaimAreas": 0
+    "ExtraLandClaimAreas": 0,
+    "FirstJoinDate": null,
+    "LastJoinDate": null,
+    "LastCharacterSelectionDate": null
   }
 ]
