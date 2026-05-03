@@ -5,7 +5,7 @@ WORKDIR /download
 
 ARG vs_type=stable
 ARG vs_os=linux-x64
-ARG vs_version=1.22.1
+ARG vs_version=1.22.2
 
 RUN apk update
 RUN apk add wget tar
